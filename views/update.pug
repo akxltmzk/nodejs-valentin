@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  div
+    form(action="/update/"+employee.id method="post")
+      input(type="text" name="name" value=employee.name)
+      button(type="submit") submit

@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  ul.menu
+    li
+      a(href='/create') create  
+  br
+  table
+    each employee in employees
+      tr
+        td= employee.name
+        td 
+          a(href='/update/'+ employee.id) update
+          a(href='/delete/'+ employee.id) Delete
